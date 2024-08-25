@@ -1,1 +1,1 @@
-# prescriptive.github.io
+# prescriptiveapp.github.io
