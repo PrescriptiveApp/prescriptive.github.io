@@ -1,153 +1,217 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script src="https://unpkg.com/alpinejs" defer></script>
-      <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-      <style type="text/tailwindcss">
-         undefined
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://unpkg.com/alpinejs" defer></script>
+   <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+   <style type="text/tailwindcss">
+      undefined
       </style>
-      <script>
-         tailwind.config = { theme: undefined }
-      </script>
-      <meta name="google-site-verification" content="yRL3pckCmo5xgpoaQ8lnCbXPeDsADL_SD3YWDPHVhss" />
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3PPBZSZWS"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-      
-         gtag('config', 'G-D3PPBZSZWS');
-      </script>
-   </head>
-   <header class="absolute inset-x-0 top-0 z-10 w-full">
-      <div class="px-4 mx-auto sm:px-6 lg:px-8">
-         <div class="flex items-center justify-between h-16 lg:h-20">
-            <div class="flex-shrink-0">
-               <a href="/" title="" class="flex">
+   <script>
+      tailwind.config = { theme: undefined }
+   </script>
+   <meta name="google-site-verification" content="yRL3pckCmo5xgpoaQ8lnCbXPeDsADL_SD3YWDPHVhss" />
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3PPBZSZWS"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-D3PPBZSZWS');
+   </script>
+</head>
+<header class="absolute inset-x-0 top-0 z-10 w-full">
+   <div class="px-4 mx-auto sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+         <div class="flex-shrink-0">
+            <a href="/" title="" class="flex">
                <img class="w-auto h-8" src="../logo.png" alt="PrescriptiveLogo" />
-               </a>
-            </div>
-            <button type="button" class="inline-flex items-center p-2 text-sm text-white uppercase transition-all duration-200 bg-black lg:hidden focus:bg-gray-800 hover:bg-gray-800">
-               <!-- Menu open: "hidden", Menu closed: "block" -->
-               <svg class="block w-6 h-6 mr-2" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-               </svg>
-               <!-- Menu open: "block", Menu closed: "hidden" -->
-               <svg class="hidden w-6 h-6 mr-2" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-               </svg>
-               Menu
-            </button>
-            <div class="hidden lg:flex lg:items-center lg:justify-center lg:ml-10 lg:mr-auto lg:space-x-10">
-               <a href="../about.html" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80"> About us </a>
-            </div>
+            </a>
+         </div>
+         <button type="button"
+            class="inline-flex items-center p-2 text-sm text-white uppercase transition-all duration-200 bg-black lg:hidden focus:bg-gray-800 hover:bg-gray-800">
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg class="block w-6 h-6 mr-2" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            <svg class="hidden w-6 h-6 mr-2" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            Menu
+         </button>
+         <div class="hidden lg:flex lg:items-center lg:justify-center lg:ml-10 lg:mr-auto lg:space-x-10">
+            <a href="../about.html" title=""
+               class="text-base text-black transition-all duration-200 hover:text-opacity-80"> About us </a>
          </div>
       </div>
-   </header>
-   <body>
-      <div class="section-spacing">
+   </div>
+</header>
+
+<body>
+   <div class="section-spacing">
       <section>
          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-         <div class="pt-12 sm:pt-20 md:pt-24 lg:pt-32" sectionname="hero" id="hero" sectionlabel="Hero" sortorder="0">
-            <div class="relative isolate">
-               <div class="absolute inset-y-0 -z-10 transform-gpu overflow-hidden -top-52 md:-top-40 right-0 lg:block lg:-top-56">
-                  <svg class="" width="233" height="189" fill="none" viewBox="0 0 233 189">
-                     <defs>
-                        <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                           <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-slate-800" fill="currentColor"></rect>
-                        </pattern>
-                     </defs>
-                     <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
-                  </svg>
-               </div>
-               <!-- Content -->
-               <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                  <div class="mx-auto max-w-2xl text-center">
-                     <h1 class="text-4xl font-bold font-sans tracking-tight text-gray-900 dark:text-white sm:text-6xl text-type-950 dark:text-white">Privacy Policy</h1>
-                     <div class="prose prose-user font-serif dark:text-slate-300 mt-6 leading-8 mx-auto max-w-7xl text-type-800 dark:text-slate-300">
-                        <p>At Prescriptive, we prioritize the privacy and security of our users. This privacy policy explains how we collect, use, and protect your personal information. We understand the importance of maintaining the confidentiality of your data and are committed to providing a safe and secure platform for all your medication management needs. If you have any concerns or questions about our privacy practices, please reach out to us at prescriptiveapp@gmail.com.</p>
-                     </div>
+            <div class="pt-12 sm:pt-20 md:pt-24 lg:pt-32" sectionname="hero" id="hero" sectionlabel="Hero"
+               sortorder="0">
+               <div class="relative isolate">
+                  <div
+                     class="absolute inset-y-0 -z-10 transform-gpu overflow-hidden -top-52 md:-top-40 right-0 lg:block lg:-top-56">
+                     <svg class="" width="233" height="189" fill="none" viewBox="0 0 233 189">
+                        <defs>
+                           <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20"
+                              patternUnits="userSpaceOnUse">
+                              <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-slate-800"
+                                 fill="currentColor"></rect>
+                           </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+                     </svg>
                   </div>
-                  <!-- Hero Media -->
-               </div>
-               <!-- BG Gradient -->
-               <div class="absolute -z-10 top-[calc(100%-20rem)] transform-gpu overflow-hidden hidden lg:block">
-                  <svg class="" width="144" height="392" fill="none" viewBox="0 0 144 392">
-                     <defs>
-                        <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                           <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect>
-                        </pattern>
-                     </defs>
-                     <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
-                  </svg>
+                  <!-- Content -->
+                  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                     <div class="mx-auto max-w-2xl text-center">
+                        <h1
+                           class="text-4xl font-bold font-sans tracking-tight text-gray-900 dark:text-white sm:text-6xl text-type-950 dark:text-white">
+                           Privacy Policy</h1>
+                        <div
+                           class="prose prose-user font-serif dark:text-slate-300 mt-6 leading-8 mx-auto max-w-7xl text-type-800 dark:text-slate-300">
+                           <p>At Prescriptive, we prioritize the privacy and security of our users. This privacy policy
+                              explains how we collect, use, and protect your personal information. We understand the
+                              importance of maintaining the confidentiality of your data and are committed to providing
+                              a safe and secure platform for all your medication management needs. If you have any
+                              concerns or questions about our privacy practices, please reach out to us at
+                              prescriptiveapp@gmail.com.</p>
+                        </div>
+                     </div>
+                     <!-- Hero Media -->
+                  </div>
+                  <!-- BG Gradient -->
+                  <div class="absolute -z-10 top-[calc(100%-20rem)] transform-gpu overflow-hidden hidden lg:block">
+                     <svg class="" width="144" height="392" fill="none" viewBox="0 0 144 392">
+                        <defs>
+                           <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20"
+                              patternUnits="userSpaceOnUse">
+                              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect>
+                           </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+                     </svg>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="prose prose-user font-serif dark:text-slate-300 mt-6 leading-8 mx-auto max-w-7xl text-type-800 dark:text-slate-300">
+            <div
+               class="prose prose-user font-serif dark:text-slate-300 mt-6 leading-8 mx-auto max-w-7xl text-type-800 dark:text-slate-300">
       </section>
       <section>
-      <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"><div class="prose prose-user font-sans dark:prose-invert mx-auto max-w-7xl">
-        <div style="height: 40px;"></div>
-          <p>At Prescriptive, we value your privacy and are committed to protecting your personal information. This privacy policy outlines the types of information we collect from you, how we use it, and the measures we take to keep it secure.</p> 
-          <h3>Information we collect from you</h3> <p>When you use our app or website, we may collect personal information such as your name, address, email address, and phone number. We collect this information for the purpose of providing you with our services, including ordering medication, comparing prices, refilling prescriptions, and connecting with doctors. We may also collect information about your health conditions and medical history to ensure the accuracy and safety of our services.</p> <h3>Access to your Personal Information</h3> <p>You have the right to access, update, and delete your personal information at any time. If you would like to do so, please contact us at privacy@prescriptive.com.</p> <h3>How we use your information</h3> <p>We use your personal information to provide you with our services and improve your medication management experience. This includes processing your orders, comparing prices, refilling prescriptions, and facilitating communication with doctors. We may also use your information to send you important updates and notifications related to your medication and health.</p> <h3>Non-Personally Identifiable Information</h3> <p>In addition to personal information, we may collect non-personally identifiable information about your usage of our app and website. This includes data such as your device type, browser type, IP address, and browsing behavior. We use this information to analyze trends, improve our services, and enhance your user experience.</p> <h3>Storage and Security of your information</h3> <p>We take the security of your personal information seriously and have implemented industry-standard measures to protect it. Your information is stored on secure servers and access is restricted to authorized personnel only. We regularly review our security practices to ensure the ongoing safety of your data.</p> <h3>Cookies and Pixels</h3> <p>We use cookies and pixels on our app and website to enhance your browsing experience and personalize our services. Cookies are small text files that are stored on your device and allow us to remember your preferences and provide customized content. Pixels are small images that allow us to track user activity and gather anonymous data for analytics purposes. You can manage your cookie preferences in your browser settings.</p></div></div>
+         <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <div class="prose prose-user font-sans dark:prose-invert mx-auto max-w-7xl">
+               <div style="height: 40px;"></div>
+               <p>At Prescriptive, we value your privacy and are committed to protecting your personal information. This
+                  privacy policy outlines the types of information we collect from you, how we use it, and the measures
+                  we take to keep it secure.</p>
+               <h3>Information we collect from you</h3>
+               <p>When you use our app or website, we may collect personal information such as your name, address, email
+                  address, and phone number. We collect this information for the purpose of providing you with our
+                  services, including ordering medication, comparing prices, refilling prescriptions, and connecting
+                  with doctors. We may also collect information about your health conditions and medical history to
+                  ensure the accuracy and safety of our services.</p>
+               <h3>Access to your Personal Information</h3>
+               <p>You have the right to access, update, and delete your personal information at any time. If you would
+                  like to do so, please contact us at privacy@prescriptive.com.</p>
+               <h3>How we use your information</h3>
+               <p>We use your personal information to provide you with our services and improve your medication
+                  management experience. This includes processing your orders, comparing prices, refilling
+                  prescriptions, and facilitating communication with doctors. We may also use your information to send
+                  you important updates and notifications related to your medication and health.</p>
+               <h3>Non-Personally Identifiable Information</h3>
+               <p>In addition to personal information, we may collect non-personally identifiable information about your
+                  usage of our app and website. This includes data such as your device type, browser type, IP address,
+                  and browsing behavior. We use this information to analyze trends, improve our services, and enhance
+                  your user experience.</p>
+               <h3>Storage and Security of your information</h3>
+               <p>We take the security of your personal information seriously and have implemented industry-standard
+                  measures to protect it. Your information is stored on secure servers and access is restricted to
+                  authorized personnel only. We regularly review our security practices to ensure the ongoing safety of
+                  your data.</p>
+               <h3>Cookies and Pixels</h3>
+               <p>We use cookies and pixels on our app and website to enhance your browsing experience and personalize
+                  our services. Cookies are small text files that are stored on your device and allow us to remember
+                  your preferences and provide customized content. Pixels are small images that allow us to track user
+                  activity and gather anonymous data for analytics purposes. You can manage your cookie preferences in
+                  your browser settings.</p>
+            </div>
+         </div>
       </section>
-      </div>
-      <div style="height: 40px;"></div>
-   </body>
-   <footer class="py-12 bg-gray-50 sm:py-16 lg:py-20">
-      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-         <div class="grid grid-cols-2 gap-x-8 gap-y-16 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-20">
-            <div class="col-span-2 md:col-span-3 lg:col-span-2">
-               <a href="/" title="" class="">
+   </div>
+   <div style="height: 40px;"></div>
+</body>
+<footer class="py-12 bg-gray-50 sm:py-16 lg:py-20">
+   <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-2 gap-x-8 gap-y-16 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-20">
+         <div class="col-span-2 md:col-span-3 lg:col-span-2">
+            <a href="/" title="" class="">
                <img class="w-auto h-8" src="../logo.png" alt="Prescriptive Logo" />
-               </a>
-               <p class="max-w-md mt-6 text-sm font-normal leading-6 text-gray-900">Simplify Your Medication Management</p>
-            </div>
-            <div class="">
-               <p class="text-xs font-bold tracking-widest text-gray-400 uppercase">Company</p>
-               <ul class="mt-6 space-y-5">
-                  <li>
-                     <a href="../about.html" title="" class="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1"> About </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="">
-               <p class="text-xs font-bold tracking-widest text-gray-400 uppercase">Help</p>
-               <ul class="mt-6 space-y-5">
-                  <li>
-                     <a href="mailto:prescriptiveapp@gmail.com" title="" class="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1"> Customer Support </a>
-                  </li>
-                  <li>
-                     <a href="../privacy.html" title="" class="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1"> Privacy Policy </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-span-2 md:col-span-1 lg:col-span-2">
-               <p class="text-xs font-bold tracking-widest text-gray-400 uppercase">Popular Posts</p>
-               <div class="mt-5 space-y-6">
-                  <div>
-                     <p class="text-base font-bold text-gray-900">
-                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9498383/" title=""> How medication adherence improves patient outcomes </a>
-                     </p>
-                     <p class="mt-2 text-sm font-medium text-gray-500">April 09, 2022</p>
-                  </div>
-                  <div>
-                     <p class="text-base font-bold text-gray-900">
-                        <a href="https://granitegastro.com/the-importance-of-maintaining-gut-health-for-overall-wellbeing/" title="">The impact of gut health on overall wellbeing </a>
-                     </p>
-                     <p class="mt-2 text-sm font-medium text-gray-500">April 09, 2022</p>
-                  </div>
+            </a>
+            <p class="max-w-md mt-6 text-sm font-normal leading-6 text-gray-900">Simplify Your Medication Management</p>
+         </div>
+         <div class="">
+            <p class="text-xs font-bold tracking-widest text-gray-400 uppercase">Company</p>
+            <ul class="mt-6 space-y-5">
+               <li>
+                  <a href="../about.html" title=""
+                     class="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1">
+                     About </a>
+               </li>
+            </ul>
+         </div>
+         <div class="">
+            <p class="text-xs font-bold tracking-widest text-gray-400 uppercase">Help</p>
+            <ul class="mt-6 space-y-5">
+               <li>
+                  <a href="mailto:prescriptiveapp@gmail.com" title=""
+                     class="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1">
+                     Customer Support </a>
+               </li>
+               <li>
+                  <a href="../privacy.html" title=""
+                     class="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1">
+                     Privacy Policy </a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-span-2 md:col-span-1 lg:col-span-2">
+            <p class="text-xs font-bold tracking-widest text-gray-400 uppercase">Popular Posts</p>
+            <div class="mt-5 space-y-6">
+               <div>
+                  <p class="text-base font-bold text-gray-900">
+                     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9498383/" title=""> How medication adherence
+                        improves patient outcomes </a>
+                  </p>
+                  <p class="mt-2 text-sm font-medium text-gray-500">April 09, 2022</p>
+               </div>
+               <div>
+                  <p class="text-base font-bold text-gray-900">
+                     <a href="https://granitegastro.com/the-importance-of-maintaining-gut-health-for-overall-wellbeing/"
+                        title="">The impact of gut health on overall wellbeing </a>
+                  </p>
+                  <p class="mt-2 text-sm font-medium text-gray-500">April 09, 2022</p>
                </div>
             </div>
          </div>
-         <hr class="mt-16 border-gray-200 lg:mt-24" />
-         <div class="mt-8 text-center">
-            <p class="text-sm font-normal leading-6 text-gray-500">© Copyright 2022, All Rights Reserved by Prescriptive</p>
-         </div>
       </div>
-   </footer>
+      <hr class="mt-16 border-gray-200 lg:mt-24" />
+      <div class="mt-8 text-center">
+         <p class="text-sm font-normal leading-6 text-gray-500">© Copyright 2022, All Rights Reserved by Prescriptive
+         </p>
+      </div>
+   </div>
+</footer>
+
 </html>
