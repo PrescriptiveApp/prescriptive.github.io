@@ -66,19 +66,34 @@
         
                     <!-- Desktop menu -->
                     <div class="hidden lg:flex lg:items-center lg:justify-center lg:ml-10 lg:mr-auto lg:space-x-10">
-                        <a href="../about.html" title=""
+                        <a href="./about" title=""
                             class="text-base text-black transition-all duration-200 hover:text-opacity-80"> About us
                         </a>
                     </div>
                 </div>
         
                 <!-- Mobile dropdown menu -->
-                <div id="mobile-menu" class="hidden lg:hidden">
-                    <div class="flex flex-col items-end space-y-4 mt-4">
-                        <a href="../about.html" title=""
+                <div id="mobile-menu" class="flex flex-col items-end">
+                    <!-- <div class="flex flex-col items-end mt-4">
+                        <a href="./about" title=""
                             class="text-base text-black transition-all duration-200 hover:text-opacity-80">About us
                         </a>
-                    </div>
+                    </div> -->
+                    <a href="./about" title="">
+                    <button id="mobile-menu-button" type="button"
+                    class="inline-flex items-center p-2 text-sm uppercase transition-all duration-200 lg:hidden">
+                    <!-- Menu open: "hidden", Menu closed: "block" -->
+    
+                    <!-- Menu open: "block", Menu closed: "hidden" -->
+                    <svg id="menu-close-icon" class="hidden w-6 h-6 mr-2" xmlns="https://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+    
+                    About us
+                </button>
+            </a>
                 </div>
             </div>
         </header>
@@ -126,32 +141,32 @@
                                 </script>
                             </div>
 
-                            <div class="ratings text-type-700 dark:text-white mt-6 flex" data-testid="ratings">
+                            <div class="ratings text-type-700 mt-6 flex" data-testid="ratings">
                                 <div
                                     class="divide-accent-700 dark:divide-slate-400 flex items-center gap-3 divide-x text-center sm:text-left">
                                     <div class="flex flex-wrap flex-shrink-0"><svg width="1.2em" height="1.2em"
                                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"
-                                            class="w-5 h-5 text-highlight dark:text-white">
+                                            class="w-5 h-5 text-highlight">
                                             <path fill="currentColor"
                                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292Z">
                                             </path>
                                         </svg><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet"
-                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight dark:text-white">
+                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight">
                                             <path fill="currentColor"
                                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292Z">
                                             </path>
                                         </svg><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet"
-                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight dark:text-white">
+                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight">
                                             <path fill="currentColor"
                                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292Z">
                                             </path>
                                         </svg><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet"
-                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight dark:text-white">
+                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight">
                                             <path fill="currentColor"
                                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292Z">
                                             </path>
                                         </svg><svg width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet"
-                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight dark:text-white">
+                                            viewBox="0 0 20 20" class="w-5 h-5 text-highlight">
                                             <path fill="currentColor"
                                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292Z">
                                             </path>
@@ -168,7 +183,7 @@
                                 <div class="inline-flex items-center">
                                     <div>
                                         <p
-                                            class="text-type-700 dark:text-slate-300 dark:font-bold text-sm font-serif tracking-tight sm:text-base sm:font-bold text-balance">
+                                            class="text-type-700 dark:font-bold text-sm font-serif tracking-tight sm:text-base sm:font-bold text-balance">
                                             “Prescriptive has made managing my medications so much easier. I can order
                                             my meds, compare prices, and even get refills without any hassle. Highly
                                             recommended!” </p>
@@ -177,7 +192,7 @@
                                                 alt="Mark Moore"
                                                 class="object-cover inline-block mr-1 border border-primary rounded-full sm:mr-2 h-7 w-7">
                                             <p
-                                                class="text-type-700 dark:text-slate-200 text-sm sm:text-base font-semibold font-serif">
+                                                class="text-type-700 text-sm sm:text-base font-semibold font-serif">
                                                 Mark Moore </p>
                                         </div>
                                     </div>
@@ -205,10 +220,10 @@
                     <!-- Feature -->
                     <div>
                         <h2
-                            class="text-3xl sm:text-4xl font-black font-sans tracking-tight text-type-900 dark:text-white">
+                            class="text-3xl sm:text-4xl font-black font-sans tracking-tight text-type-900">
                             Streamline your medication needs</h2>
                         <div
-                            class="mt-4 prose prose-user font-serif leading-relaxed text-type-700 dark:text-slate-200 text-base sm:text-lg">
+                            class="mt-4 prose prose-user font-serif leading-relaxed text-type-700 text-base sm:text-lg">
                             <p>Master everything related to your medication regimen with Prescriptive. Easily order and
                                 compare drug prices, refill prescriptions, set dose reminders, find educational content,
                                 and connect with healthcare providers through one centralized platform. Enhancing
@@ -235,10 +250,10 @@
                     <!-- Feature -->
                     <div>
                         <h2
-                            class="text-3xl sm:text-4xl font-black font-sans tracking-tight text-type-900 dark:text-white">
+                            class="text-3xl sm:text-4xl font-black font-sans tracking-tight text-type-900">
                             Save money on medications</h2>
                         <div
-                            class="mt-4 prose prose-user font-serif leading-relaxed text-type-700 dark:text-slate-200 text-base sm:text-lg">
+                            class="mt-4 prose prose-user font-serif leading-relaxed text-type-700 text-base sm:text-lg">
                             <p>With Prescriptive, you can easily compare prices from different pharmacies and find the
                                 best deals on your medications. No more overpaying for prescriptions - this app helps
                                 you save money.</p>
@@ -264,10 +279,10 @@
                     <!-- Feature -->
                     <div>
                         <h2
-                            class="text-3xl sm:text-4xl font-black font-sans tracking-tight text-type-900 dark:text-white">
+                            class="text-3xl sm:text-4xl font-black font-sans tracking-tight text-type-900">
                             Convenient access to doctors</h2>
                         <div
-                            class="mt-4 prose prose-user font-serif leading-relaxed text-type-700 dark:text-slate-200 text-base sm:text-lg">
+                            class="mt-4 prose prose-user font-serif leading-relaxed text-type-700 text-base sm:text-lg">
                             <p>Need a prescription refill? With Prescriptive, you can reach out to your doctor directly
                                 through the app and request a refill. It's convenient and hassle-free, ensuring you
                                 never run out of essential medications.</p>
@@ -320,7 +335,7 @@
 
                 <ul class="mt-6 space-y-5">
                     <li>
-                        <a href="../about.html" title=""
+                        <a href="./about" title=""
                             class="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1">
                             About </a>
                     </li>
